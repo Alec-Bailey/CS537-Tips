@@ -26,8 +26,8 @@ What about if I'm stepping through and want to finish a loop?
 2. ```p $eax``` - Print the value in any register
 
 3. Pointers can be dereferenced just like in the code itself
-```p *pstat``` - shows values in side struct pstat
-```someStructPointer->someArray[5]``` - Same idea
+    1. ```p *pstat``` - shows values inside struct pstat
+    2. ```someStructPointer->someArray[5]``` - Same idea
 
 4. This gets messy with large structures or arrays, so try prettyprint
 ```show print pretty```
