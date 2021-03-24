@@ -7,7 +7,7 @@ This avoids most (not all) optimized out issues
 
 ## Breakpoints
 1. ctrl + c interrupt your program
-2. ```b```sets a breakpoint
+2. ```b``` sets a breakpoint
 3. ```c``` continues execution until breakpoint
 
 ## More control flow
@@ -43,6 +43,6 @@ by default GDB is set to follow parent, change with
 
 ## Resources you should use
 1. This is the best resource I have found - contains just about everythig you'd ever want to do.
-https://sourceware.org/gdb/current/onlinedocs/gdb/index.html
+[GDB Master Resource](https://sourceware.org/gdb/current/onlinedocs/gdb/index.html)
 2. 15 minutes and shows off graphical mode for GDB & some more advanced features
-https://www.youtube.com/watch?v=PorfLSr3DDI
+[15 Minutes to change your view of GDB](https://www.youtube.com/watch?v=PorfLSr3DDI)
