@@ -32,9 +32,8 @@ What about if I'm stepping through and want to finish a loop?
 
 ## More advanced debugging (with xv6)
 1. Debugging user programs (non-trivial)
-	a. ```symbol-file _fileName``` - Loads the appropriate userprogram symbol-file. Note this switches your context to exist only in the user-space
-	b. For some compilcated reasons, if you set a breakpoint in a user program before xv6 is initalized, you will
-	   sporadically hit the break point. Allow XV6 to start completely, then interrupt it to set a break point. Finally, run your userprogram.
+    a. ```symbol-file _fileName``` - Loads the appropriate userprogram symbol-file. Note this switches your context to exist only in the user-space
+    b. For some compilcated reasons, if you set a breakpoint in a user program before xv6 is initalized, you will sporadically hit the break point. Allow XV6 to start completely, then interrupt it to set a break point. Finally, run your userprogram.
 
 2. We can chose whether or not to remain within the parent or child's execution when calling fork()
 ```set follow-fork-mode (parent|child)```
