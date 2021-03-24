@@ -8,7 +8,8 @@ This avoids most (not all) optimized out issues
 ## Breakpoints
 1. ctrl + c interrupt your program
 2. ```b``` sets a breakpoint
-3. ```c``` continues execution until breakpoint
+    1. Break on a function name ```b doSomething```
+    2. Or a line number in any valid file in the context file.c:lineNum ```b proc.c:420```
 
 ## More control flow
 1. ```c``` Just continues on until the next breakpoint
@@ -18,6 +19,7 @@ What about if I'm stepping through and want to finish a loop?
 
 3. ```until XXX``` where xxx is the line number just after the loop, this works like a "one time" breakpoint
 
+4. This should get you through, breakpoints and until, with the ability to step line by line are very powerful. Check the reference for even more powerful tools, including conditional break points etc.
 
 ## Basic Printing
 1. ```p myVariableName``` - Prints a variable name
@@ -27,7 +29,7 @@ What about if I'm stepping through and want to finish a loop?
 ```p *pstat``` - shows values in side struct pstat
 ```someStructPointer->someArray[5]``` - Same idea
 
-4. This gets messy, so try prettyprint
+4. This gets messy with large structures or arrays, so try prettyprint
 ```show print pretty```
 
 ## More advanced debugging (with xv6)
