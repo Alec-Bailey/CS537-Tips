@@ -30,7 +30,7 @@ What about if I'm stepping through and want to finish a loop?
     2. ```someStructPointer->someArray[5]``` - Same idea
 
 4. This gets messy with large structures or arrays, so try prettyprint
-```show print pretty```
+```set print pretty on```
 
 ## More advanced debugging (with xv6)
 1. Debugging user programs (non-trivial)
